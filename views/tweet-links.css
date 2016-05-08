@@ -1,0 +1,12 @@
+/* Tweet Links */
+
+.tweet-links .postbox h3 {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 15px;
+}
+
+.tweet-links .disclaimer span.tweet-id {
+  padding: 0 3px;
+  font-weight: bold; 
+  background-color: #ddf9f9;
+}
