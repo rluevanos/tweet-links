@@ -3,7 +3,7 @@
  * Plugin Name: Tweet Links
  * Plugin URI:  https://github.com/rluevanos/tweet-links
  * Description: Create shortcode links for tweet, retweet, and reply 
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Ricardo Luevanos
  * Author URI:  http://ricardoluevanos.com
  * License:     MIT
