@@ -162,7 +162,7 @@ class Tweet_Links {
 		}
 
 		if ( ! empty( $data['message_on'] ) ) {
-			$message = esc_html( $data['custom_message'] );
+			$message = $data['custom_message'];
 			$message = str_replace( '{TWEET}', do_shortcode( '[tweetlinks type="tweet" text="tweet"]' ) , $message );	
 			$message = str_replace( '{RETWEET}', do_shortcode( '[tweetlinks type="retweet" text="retweet"]' ) , $message );	
 			$message = str_replace( '{REPLY}', do_shortcode( '[tweetlinks type="reply" text="reply"]' ) , $message );	
@@ -229,7 +229,7 @@ class Tweet_Links {
 		}
 
 		if ( ! empty( $params['tweet_links_custom_message'] ) ) {
-			$data['custom_message'] = sanitize_text_field( $params['tweet_links_custom_message'] );
+			$data['custom_message'] = wp_kses_post( $params['tweet_links_custom_message'] );
 		}
 
 		update_option( 'tweet_links', $data );
